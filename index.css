@@ -1,18 +1,22 @@
 
+
 .categories {
     display: flex;
-    position: fixed;
-    margin-top: 61px;
-   
-     top: 0;  
-    left: 0;  
+    margin-top: 51px;
+  
     width: 100%; 
-    padding: 1rem 0rem 0rem 7rem;
+    padding: 1rem 0rem 1rem 7rem;
     gap: 10px;
     background-color: white;
-   
+   position: fixed;
+   margin-left: 3rem;
+   top: -2px;
+   overflow-x: auto; 
+   scrollbar-width: none; 
+   z-index: 100;
      
   }
+ 
   .categories button {
     background-color: #f0ecec;
     color: black;
@@ -23,25 +27,25 @@
     font-size: 14px;
     font-weight: 2rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-     
+    height: 32px; 
+    min-width: fit-content;
+   
   }
   .categories button:hover{
-    cursor: pointer;
     background-color: rgb(207, 208, 210);
-  }
+    cursor: pointer;
+}
 
   .barre{
     display: flex;
-    padding: 0rem 6rem;
+    padding: 3rem 0px 0px 6rem;
     gap: 10px;
-  
     margin-left: 6px;
-    display: flex;
     flex-direction: column;
-   
     position: fixed;
   width: 100%; 
-  margin-top: 4rem;
+  margin-top: 1rem;
+ 
   }
   .barre button {
     background-color: #f0ecec;
@@ -76,18 +80,28 @@ body{
     position: relative;
    
     padding: 0 4px;
+    margin-left: 6rem;
  
 }
 .search{
     width: 60px;
-    background-color: white;
+  
     border-radius: 0 40px 40px 0;
     cursor: pointer;
     border: 1px solid;
+    background-color: #f1f1f1;
 }
 .youtsearch{
     display: flex;
 }
+.mic-button{
+    border-radius: 50%;
+    border: none;
+    margin-left: 1rem;
+    height: 41px;
+    width: 41px;
+}
+
 .left{
     width: 27px;
     height: 2px;
@@ -100,9 +114,15 @@ body{
         gap: 7px;
       scale: 0.7;  
         flex-direction: column;
-        margin-left: 15px;
-        margin-top: 5.5px;
+        margin-left: 20px;
+        margin-top: 3px;
         
+}
+.youtubeleft
+{
+
+        display: flex;
+       gap: 24px;
 }
 .logo
 {
@@ -110,9 +130,9 @@ body{
     height: 25px;
     BACKGROUND: white;
     border-radius: 8px;
-    margin-left: -165px;
+   
     
-    margin-top: 8.5px;
+   
     
 }
 
@@ -122,13 +142,13 @@ body{
     HEIGHT: 100%;
     object-fit: cover;
     BORDER-RADIUS: 8px; 
-    margin-left: 28px;
+
    
 }
 
 .cercle{
-    width: 40px;
-    HEIGHT: 40px;
+    width: 33px;
+    HEIGHT: 33px;
     BACKGROUND: white;
     BORDER-RADIUS: 50%;
     margin-right: 15px;
@@ -137,13 +157,13 @@ body{
     width: 85px;
     HEIGHT: 37px;
     BACKGROUND: white;
-    BORDER-RADIUS: 23%;
+    BORDER-RADIUS: 38%;
     margin-right: 15px;
 }
 .right{
     display: flex;
     gap: 2px;
-    margin-right: 24px;
+    margin-right: 20px;
     
 }
 
@@ -157,7 +177,7 @@ body{
     width: 100%;
     HEIGHT: 100%;
     object-fit: cover;
-    BORDER-RADIUS: 23%;
+    BORDER-RADIUS: 38%;
     margin-right: 22px;
 }
 
@@ -170,9 +190,10 @@ body{
 .top{
     display: flex;
 padding-top: 20px;
+align-items: center;
     justify-content: space-between;
     position: fixed;
-    top: 0;  
+    top: -12px;  
     left: 0;  
     width: 100%; 
     background-color: white
@@ -191,8 +212,8 @@ padding-top: 20px;
     border-radius: 8%;
 }
 .profile{
-    width: 50px;
-    HEIGHT: 50px;
+    width: 35px;
+    HEIGHT: 35px;
     BORDER-RADIUS: 50%;
 }
 
@@ -223,7 +244,7 @@ padding-top: 20px;
 }
 
 .yout{
-    margin-left: 145px;
+    margin-left: 156px;
     margin-top: 6rem;
     display: flex;
     flex-direction: column;
@@ -279,7 +300,6 @@ padding-top: 20px;
 
  .barre button {
     background-color: #fcf7f7;
-    color: black;
     width: 68px;
   HEIGHT: 69px;
     border: none;
