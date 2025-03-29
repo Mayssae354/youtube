@@ -1,12 +1,13 @@
-.h6a{
-    margin-left: -10px;
-    font-size: revert;
-    font-family: fangsong;
-}
+
 .categories {
     display: flex;
-    
-    padding: 1rem 7rem;
+    position: fixed;
+    margin-top: 61px;
+   
+     top: 0;  
+    left: 0;  
+    width: 100%; 
+    padding: 1rem 0rem 0rem 7rem;
     gap: 10px;
     background-color: white;
    
@@ -20,11 +21,11 @@
     border-radius: 12px;
     cursor: pointer;
     font-size: 14px;
-    
+    font-weight: 2rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
      
   }
-  button:hover{
+  .categories button:hover{
     cursor: pointer;
     background-color: rgb(207, 208, 210);
   }
@@ -33,51 +34,85 @@
     display: flex;
     padding: 0rem 6rem;
     gap: 10px;
-    background-color: white;
+  
     margin-left: 6px;
     display: flex;
     flex-direction: column;
+   
+    position: fixed;
+  width: 100%; 
+  margin-top: 4rem;
   }
- 
+  .barre button {
+    background-color: #f0ecec;
+    border: none;
+    padding: 0px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+   
+     
+  }
+  .barre button:hover{
+    cursor: pointer;
+    background-color: rgb(207, 208, 210);
+  }
   
 body{
     color: black;
     background: white;
+  
 }
 .recherche{
-    width: 500px;
-    HEIGHT: 32px;
-    border-radius: 10px;
-    margin-top: 14px;
+    width: 525px;
+    HEIGHT: 40px;
     color: black;
+    border-radius: 40px 0 0 40px;
     background-color: white;
+    align-items: center;
+    border: 1px solid;
+    border-right: 0;
+    cursor: text;
+    display: flex;
+    position: relative;
    
-    border-color: #e8e8e8;
+    padding: 0 4px;
+ 
 }
-
+.search{
+    width: 60px;
+    background-color: white;
+    border-radius: 0 40px 40px 0;
+    cursor: pointer;
+    border: 1px solid;
+}
+.youtsearch{
+    display: flex;
+}
 .left{
-    width: 26px;
+    width: 27px;
     height: 2px;
     background: grey;
     border-radius: 20px;
 }
 
-
 .leftt{
     display: flex;
-        gap: 5px;
+        gap: 7px;
+      scale: 0.7;  
         flex-direction: column;
-        margin-left: 24px;
-        margin-top: 24px;
+        margin-left: 15px;
+        margin-top: 5.5px;
+        
 }
 .logo
 {
-    width: 97px;
-    height: 38px;
+    width: 90px;
+    height: 25px;
     BACKGROUND: white;
     border-radius: 8px;
-    margin-left: -170px;
-    margin-top: 16px;
+    margin-left: -165px;
+    
+    margin-top: 8.5px;
     
 }
 
@@ -88,7 +123,7 @@ body{
     object-fit: cover;
     BORDER-RADIUS: 8px; 
     margin-left: 28px;
-    margin-top: -6px;
+   
 }
 
 .cercle{
@@ -102,14 +137,14 @@ body{
     width: 85px;
     HEIGHT: 37px;
     BACKGROUND: white;
-    BORDER-RADIUS: 15%;
+    BORDER-RADIUS: 23%;
     margin-right: 15px;
 }
 .right{
     display: flex;
     gap: 2px;
     margin-right: 24px;
-    margin-top: 10px;
+    
 }
 
 
@@ -122,16 +157,10 @@ body{
     width: 100%;
     HEIGHT: 100%;
     object-fit: cover;
-    BORDER-RADIUS: 15%;
+    BORDER-RADIUS: 23%;
     margin-right: 22px;
 }
-.jaras{
-    width: 100%;
-    HEIGHT: 100%;
-    object-fit: cover;
-    BORDER-RADIUS: 50%; 
-    
-}
+
 .photo{
     width: 100%;
     HEIGHT: 100%;
@@ -140,7 +169,13 @@ body{
 }
 .top{
     display: flex;
+padding-top: 20px;
     justify-content: space-between;
+    position: fixed;
+    top: 0;  
+    left: 0;  
+    width: 100%; 
+    background-color: white
 }
 
 .carre{
@@ -149,107 +184,20 @@ body{
     background: grey;
     border-radius: 8%;
 }
-.vid{
-    width: 360px;
-    HEIGHT: 200px;
 
-    border-radius: 8%;
-}
-.ken{
+.divvideo{
     width: 100%;
     HEIGHT: 100%;
     border-radius: 8%;
 }
-.pr{
+.profile{
     width: 50px;
     HEIGHT: 50px;
     BORDER-RADIUS: 50%;
 }
-.mu{
-    width: 100%;
-    HEIGHT: 100%;
-    border-radius: 8%;
-}
-.prr{
-    width: 50px;
-    HEIGHT: 50px;
-    BORDER-RADIUS: 50%;
-}
-.jen{
-    width: 100%;
-    HEIGHT: 100%;
-    border-radius: 8%;
-}
-.prj{
-    width: 50px;
-    HEIGHT: 50px;
-    BORDER-RADIUS: 50%;
-}
-.khal
-{
-    width: 100%;
-    HEIGHT: 100%;
-    border-radius: 8%;
-}
-.prk{
-    width: 50px;
-    HEIGHT: 50px;
-    BORDER-RADIUS: 50%;
-}
-.lemo{
-    width: 100%;
-    HEIGHT: 100%;
-    border-radius: 8%;
-}
-.lemopr{
-    width: 50px;
-    HEIGHT: 50px;
-    BORDER-RADIUS: 50%;
-}
-.bamo{
-    width: 100%;
-    HEIGHT: 100%;
-    background: grey;
-    border-radius: 8%;
-}
-.kaw{
-    width: 50px;
-    HEIGHT: 50px;
-    BORDER-RADIUS: 50%;
-}
-.sed{
-    width: 100%;
-    HEIGHT: 100%;
-    background: grey;
-    border-radius: 8%;
-}
-.prsed{
-    width: 50px;
-    HEIGHT: 50px;
-    BORDER-RADIUS: 50%;
-}
-.safae{
-    width: 100%;
-    HEIGHT: 100%;
-    background: grey;
-    border-radius: 8%;
-}
-.safapr{
-    width: 50px;
-    HEIGHT: 50px;
-    BORDER-RADIUS: 50%;
-}
-.kayan{
-    width: 100%;
-    HEIGHT: 100%;
-    background: grey;
-    border-radius: 8%;
-}
-.kayanpr{
-    width: 50px;
-    HEIGHT: 50px;
-    BORDER-RADIUS: 50%;
-}
+
+
+
 .rec1{
     width: 285px;
     height: 37px;
@@ -275,9 +223,9 @@ body{
 }
 
 .yout{
-    margin-left: -126px;
-    display: flex
-;
+    margin-left: 145px;
+    margin-top: 6rem;
+    display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
@@ -380,7 +328,7 @@ body{
     width: 89px;
     height: 48px;
     border-radius: 8px;
-    margin-left: 25px;
+    margin-left: -50px;
 }
 .shortsvid{
     margin-top: 25px;
